@@ -1,0 +1,10 @@
+curl --request POST \
+  --url https://api.commerce.coinbase.com/charges \
+  --header 'Content-Type: application/json' \
+  --header 'X-CC-Api-Key: YOUR_API_KEY' \
+  --data '{
+    "name": "Order #1234",
+    "description": "Purchase of Item X",
+    "local_price": { "amount": "100.00", "currency": "USD" },
+    "pricing_type": "fixed_price"
+  }'
